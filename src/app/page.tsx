@@ -24,7 +24,7 @@ export default function Home() {
 
   const fetchStudents = async () => {
     try {
-      const res = await fetch('http://localhost:3000/api/students')
+      const res = await fetch('/api/students')
       if (!res.ok) {
         throw new Error('Failed to fetch students')
       }
